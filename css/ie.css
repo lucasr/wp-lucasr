@@ -1,0 +1,14 @@
+div, ul, li {
+	position: relative;
+	height: 1%;
+}
+
+#header .left {
+	display: inline;
+}
+
+#searchSubmit {
+    display: block;
+    font-size: 0px;
+    line-height: 0px;
+}
