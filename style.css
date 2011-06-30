@@ -10,7 +10,7 @@ body {
 
 /* Navigation Header */
 
-#nav {
+#header {
     width: 100%;
     background-color: #000;
     border-bottom: 2px solid #666;
@@ -18,50 +18,50 @@ body {
     padding-bottom: 6px;
 }
 
-#nav-content {
+#header-content {
     width: 600px;
     font-family: "Molengo";
     margin: 0 auto;
     color: #666;
 }
 
-#nav-content ul {
+#header-content ul {
     font-size: 16px;
     float: right;
     color: #fff;
 }
 
-#nav-content ul li {
+#header-content ul li {
     display: block;
     float: left;
     margin-top: 0px;
     margin-left: 20px;
 }
 
-#nav-content a,
-#nav-content a:link,
-#nav-content a:visited {
+#header-content a,
+#header-content a:link,
+#header-content a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-#nav-content a:hover {
+#header-content a:hover {
     color: #DDD;
 }
 
-#nav-content a:active {
+#header-content a:active {
     color: #fff;
 }
 
-#nav-content ul li.current_page_item,
-#nav-content ul li.current_page_item a,
-#nav-content ul li.current_page_parent, 
-#nav-content ul li.current_page_parent a {
+#header-content ul li.current_page_item,
+#header-content ul li.current_page_item a,
+#header-content ul li.current_page_parent, 
+#header-content ul li.current_page_parent a {
     font-weight: bold;
     color: #fff;
 }
 
-#nav-content h1 {
+#header-content h1 {
     font-family: "Molengo";
     font-size: 18px;
     font-weight: bold;
@@ -70,15 +70,15 @@ body {
     margin-bottom: 0px;
 }
 
-#nav-content h1 a,
-#nav-content h1 a:visited,
-#nav-content h1 a:link,
-#nav-content h1 a:active {
+#header-content h1 a,
+#header-content h1 a:visited,
+#header-content h1 a:link,
+#header-content h1 a:active {
     color: #fff;
     font-weight: bold;
 }
 
-#nav-content h1 a:hover {
+#header-content h1 a:hover {
     color: #DDD;
 }
 

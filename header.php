@@ -33,16 +33,16 @@
 
 <body>
 
-<div id="nav">
+<div id="header">
 
-<div id="nav-content" class="clear">
+<div id="header-content" class="clear">
 
 <h1 class="logo"><a href="/"><?php bloginfo('name'); ?></a></h1>
 
 <?php wp_page_menu(array('show_home' => '1', 'exclude' => '1291')); ?>
 
-</div> <!-- #nav-content -->
+</div> <!-- #header-content -->
 
-</div> <!-- #nav -->
+</div> <!-- #header -->
 
 <div id="wrapper">
