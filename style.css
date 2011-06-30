@@ -11,6 +11,7 @@ body {
 /* Navigation Header */
 
 #header {
+    font-family: "Molengo";
     width: 100%;
     background-color: #000;
     border-bottom: 2px solid #666;
@@ -20,12 +21,13 @@ body {
 
 #header-content {
     width: 600px;
-    font-family: "Molengo";
+    padding: 0px;
     margin: 0 auto;
     color: #666;
 }
 
 #header-content ul {
+    margin: 0px;
     font-size: 16px;
     float: right;
     color: #fff;
@@ -55,14 +57,13 @@ body {
 
 #header-content ul li.current_page_item,
 #header-content ul li.current_page_item a,
-#header-content ul li.current_page_parent, 
+#header-content ul li.current_page_parent,
 #header-content ul li.current_page_parent a {
     font-weight: bold;
     color: #fff;
 }
 
 #header-content h1 {
-    font-family: "Molengo";
     font-size: 18px;
     font-weight: bold;
     float: left;
@@ -98,8 +99,8 @@ body {
 /* Footer */
 
 #footer {
-    background-color: #fff;
     font-family: "Molengo";
+    background-color: #fff;
     font-size: 14px;
     margin-top: 50px;
     padding-top: 10px;
@@ -211,7 +212,6 @@ h2#comments {
 }
 
 h3 {
-    font-family: "Molengo";
     font-size: 18px;
     font-weight: bold;
     color: #000;
@@ -219,7 +219,6 @@ h3 {
 }
 
 h4 {
-    font-family: "Molengo";
     font-size: 1.2em;
     margin-bottom: 2px;
 }
@@ -434,7 +433,6 @@ dl.wp-caption-dt,
 }
 
 .navigation h2 {
-    font-family: "Molengo";
     margin-bottom: 22px;
 }
 
