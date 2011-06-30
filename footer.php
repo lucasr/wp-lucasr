@@ -9,13 +9,13 @@
 
 <div id="footer">
 
-<div id="footerContent" class="clear">
+<div id="footer-content" class="clear">
 
 <p>&copy; 2003-present <a href="/about">Lucas Rocha</a></p>
 
-</div> <!-- end of footerContent -->
+</div> <!-- #footer-content -->
 
-</div> <!-- end of footer -->
+</div> <!-- #footer -->
 
 <?php wp_footer(); ?>
 
