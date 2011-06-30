@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage lucasr.org 
+ * @subpackage wp-lucasr
  */
 
 // Do not delete these lines
