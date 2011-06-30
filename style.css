@@ -1,5 +1,4 @@
 @import "css/normalize.css";
-@import "css/reset.css";
 
 body {
     font-family: 'Palatino,serif';
@@ -17,50 +16,50 @@ body {
     padding-bottom: 6px;
 }
 
-#navContent {
+#nav-content {
     width: 600px;
     font-family: "Molengo";
     margin: 0 auto;
     color: #666;
 }
 
-#navContent ul {
+#nav-content ul {
     font-size: 16px;
     float: right;
     color: #fff;
 }
 
-#navContent ul li {
+#nav-content ul li {
     display: block;
     float: left;
     margin-top: 0px;
     margin-left: 20px;
 }
 
-#navContent a,
-#navContent a:link,
-#navContent a:visited {
+#nav-content a,
+#nav-content a:link,
+#nav-content a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-#navContent a:hover {
+#nav-content a:hover {
     color: #DDD;
 }
 
-#navContent a:active {
+#nav-content a:active {
     color: #fff;
 }
 
-#navContent ul li.current_page_item,
-#navContent ul li.current_page_item a,
-#navContent ul li.current_page_parent, 
-#navContent ul li.current_page_parent a {
+#nav-content ul li.current_page_item,
+#nav-content ul li.current_page_item a,
+#nav-content ul li.current_page_parent, 
+#nav-content ul li.current_page_parent a {
     font-weight: bold;
     color: #fff;
 }
 
-#navContent h1 {
+#nav-content h1 {
     font-family: "Molengo";
     font-size: 18px;
     font-weight: bold;
@@ -69,15 +68,15 @@ body {
     margin-bottom: 0px;
 }
 
-#navContent h1 a,
-#navContent h1 a:visited,
-#navContent h1 a:link,
-#navContent h1 a:active {
+#nav-content h1 a,
+#nav-content h1 a:visited,
+#nav-content h1 a:link,
+#nav-content h1 a:active {
     color: #fff;
     font-weight: bold;
 }
 
-#navContent h1 a:hover {
+#nav-content h1 a:hover {
     color: #DDD;
 }
 
@@ -573,14 +572,14 @@ dl.wp-caption-dt,
         letter-spacing: -1px;
     }
 
-    #navContent h1 {
+    #nav-content h1 {
         letter-spacing: -2px;
     }
 
-    #navContent ul li.current_page_item,
-    #navContent ul li.current_page_item a,
-    #navContent ul li.current_page_parent, 
-    #navContent ul li.current_page_parent a {
+    #nav-content ul li.current_page_item,
+    #nav-content ul li.current_page_item a,
+    #nav-content ul li.current_page_parent, 
+    #nav-content ul li.current_page_parent a {
         letter-spacing: -1px;
     }
 }

@@ -35,13 +35,13 @@
 
 <div id="nav">
 
-<div id="navContent" class="clear">
+<div id="nav-content" class="clear">
 
 <h1 class="logo"><a href="/"><?php bloginfo('name'); ?></a></h1>
 
 <?php wp_page_menu(array('show_home' => '1', 'exclude' => '1291')); ?>
 
-</div> <!-- #navContent -->
+</div> <!-- #nav-content -->
 
 </div> <!-- #nav -->
 
