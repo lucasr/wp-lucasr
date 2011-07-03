@@ -368,21 +368,19 @@ h2#comments {
 
 /* Comments */
 
+#commentlist,
+#commentlist ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#commentlist li {
+    list-style: none;
+}
+
 .navComments {
     padding: 15px 0;
-    margin: 0 0 15px 0;
-}
-
-.pagination {
-    margin-left: -160px;
-}
-
-.pagination span {
-    display: block;
-    width: 140px;
-    float: left;
-    margin-right: 20px;
-    text-align: right;
+    margin: 0 0 5px 0;
 }
 
 .comment,
@@ -396,6 +394,7 @@ h2#comments {
 }
 
 .commentEntry {
+    padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
