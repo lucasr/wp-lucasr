@@ -192,7 +192,7 @@ a:hover img {
     color: #000;
 }
 
-#footer-content {
+#footer .content {
     width: 600px;
     margin: 0 auto;
     margin-bottom: 3px;
@@ -201,18 +201,6 @@ a:hover img {
 #footer p {
     text-align: center;
     margin-bottom: 0px;
-}
-
-#footer a,
-#footer a:hover,
-#footer a:visited,
-#footer a:active {
-    color: #000;
-    border-bottom: 1px dotted #888;
-}
-
-#footer a:hover {
-    color: #666;
 }
 
 /* Main Area */
@@ -279,7 +267,7 @@ h2 {
     font-size: 24px;
     color: #000;
     margin-bottom: 5px;
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 h2 a,

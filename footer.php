@@ -9,7 +9,7 @@
 
 <div id="footer">
 
-<div id="footer-content" class="clear">
+<div class="content clear">
 
 <p>&copy; 2003-present <a href="/about">Lucas Rocha</a></p>
 
