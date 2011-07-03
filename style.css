@@ -42,17 +42,35 @@ code {
 a,
 a:link,
 a:visited,
-a:active,
-a:hover {
+a:active {
     text-decoration: none;
-    color: #000099;
-    cursor: pointer;
+    color: #003399;
 }
 
 a:hover {
-    color: #666;
-    cursor: pointer;
+    color: #0066FF;
 }
+
+ul,
+ol {
+    margin-bottom: 22px;
+    margin-left: 0px;
+}
+
+ul li,
+ol li {
+    line-height: 2.0em;
+}
+
+ul li {
+    list-style: disc;
+}
+
+ol li {
+    list-style: decimal;
+}
+
+/* WordPress */
 
 img,
 .wp-caption img {
@@ -96,25 +114,6 @@ a:hover img {
     margin-bottom: -43px;
 }
 
-ul,
-ol {
-    margin-bottom: 22px;
-    margin-left: 0px;
-}
-
-ul li,
-ol li {
-    line-height: 2.0em;
-}
-
-ul li {
-    list-style: disc;
-}
-
-ol li {
-    list-style: decimal;
-}
-
 /* Header */
 
 #header {
@@ -125,7 +124,7 @@ ol li {
     padding: 0px;
 }
 
-#header .content {
+#header > .content {
     width: 600px;
     padding: 0px;
     margin: 0 auto;
@@ -140,7 +139,7 @@ ol li {
     padding: 0px;
 }
 
-#header .content h1 {
+#header h1 {
     float: left;
     font-size: 14px;
     margin: 0px;
@@ -149,29 +148,24 @@ ol li {
     padding-top: 2px;
 }
 
-#header .content a,
-#header .content a:link,
-#header .content a:visited {
-    padding: 0px;
+#header a,
+#header a:link,
+#header a:active,
+#header a:visited {
     color: #000;
-    text-decoration: none;
 }
 
-#header .content a:hover {
+#header a:hover {
     color: #666;
 }
 
-#header .content a:active {
-    color: #000;
-}
-
-#header .content ul {
+#header .menu ul {
     margin: 0px;
     padding: 0px;
     float: right;
 }
 
-#header .content ul li {
+#header .menu ul li {
     line-height: 1.0em;
     display: block;
     float: left;
@@ -182,8 +176,8 @@ ol li {
     padding-bottom: 3px;
 }
 
-#header .content ul li.current_page_item,
-#header .content ul li.current_page_parent {
+#header .menu ul li.current_page_item,
+#header .menu ul li.current_page_parent {
     border-bottom: 2px solid #888;
 }
 
