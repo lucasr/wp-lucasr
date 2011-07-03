@@ -428,8 +428,7 @@ h2#comments {
     padding: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin-top: 60px;
 }
 
 .bubble a,
@@ -450,18 +449,20 @@ h2#comments {
     padding-left: 8px;
     padding-right: 0px;
     text-align: right;
+    color: #666;
+    font-style: italic;
 }
 
 .bubblePointer a {
-    color: #AAA;
+    color: #333;
 }
 
 .bubblePointer a:hover {
-    color: #111;
+    color: #888;
 }
 
 p.intro {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 /* Forms */
