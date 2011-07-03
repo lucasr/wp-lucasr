@@ -11,9 +11,9 @@
 
 <div class="content clear">
 
-<p>&copy; 2003-present <a href="/about">Lucas Rocha</a></p>
+&copy; 2003-present <a href="/about">Lucas Rocha</a>
 
-</div> <!-- #footer-content -->
+</div> <!-- .content -->
 
 </div> <!-- #footer -->
 

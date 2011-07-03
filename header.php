@@ -15,8 +15,8 @@
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico&subset=latin&v2' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700&subset=latin&v2' rel='stylesheet' type='text/css'>
 
 <?php if (is_front_page()) : ?>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/frontpage.css" type="text/css" media="screen" />
@@ -35,13 +35,13 @@
 
 <div id="header">
 
-<div id="header-content" class="clear">
+<div class="content clear">
 
-<h1 class="logo"><a href="/"><?php bloginfo('name'); ?></a></h1>
+<h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 
 <?php wp_page_menu(array('show_home' => '1', 'exclude' => '1291')); ?>
 
-</div> <!-- #header-content -->
+</div> <!-- .content -->
 
 </div> <!-- #header -->
 
