@@ -17,17 +17,17 @@ get_header(); ?>
 
 <? the_content(); ?>
 
-<h2 class="secondary">Most Popular</h2>
+<h2>Most Popular</h2>
 
 <?php WPPP_show_popular_posts( "title=&number=10&show=posts&days=0&format=<a href='%post_permalink%' title='%post_title_attribute%'>%post_title%</a>" );?>
 
-<h2 class="secondary">Most Commented</h2>
+<h2>Most Commented</h2>
 
 <ul>
 <?php most_commented_posts();?>
 </ul>
 
-<h2 class="secondary">All Posts</h2>
+<h2>All Posts</h2>
 
 <?php
  
