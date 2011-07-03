@@ -212,7 +212,7 @@ a:hover img {
 #wrapper {
     width: 600px;
     margin: 0 auto;
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 #content {
@@ -315,13 +315,13 @@ h2#comments {
     margin-bottom: 22px;
 }
 
-.postInfos {
+.post-info {
     font-size: 12px;
-    color: #AAA;
+    color: #666;
     margin: 0px;
     margin-bottom: 22px;
     padding: 0px;
-    text-transform: uppercase;
+    font-style: italic;
 }
 
 /* Archives */
@@ -339,7 +339,7 @@ h2#comments {
 .post ul.month_archive,
 .navigation ul.month_archive {
     margin-bottom: 30px;
-    margin-left: 0px;
+    margin-left: -21px;
 }
 
 .navigation h2 {
@@ -349,7 +349,6 @@ h2#comments {
 .post ul.month_archive li,
 .navigation ul.month_archive li {
     list-style: none;
-    margin-left: 20px;
     line-height: 1.8em;
 }
 

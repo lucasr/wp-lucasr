@@ -16,7 +16,7 @@ get_header(); ?>
 
 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link to', 'lucasr'); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-<div class="postInfos">
+<div class="post-info">
 
 <?php 
 if(!function_exists('easy_relative_date')) { 
@@ -27,7 +27,7 @@ if(!function_exists('easy_relative_date')) {
 ?>
 <?php edit_post_link(__('Edit', 'lucasr'), ' | ', ''); ?>
 
-</div> <!-- end of postInfos -->
+</div> <!-- end of post-info -->
 
 <div class="postContent clear">
 
