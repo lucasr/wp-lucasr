@@ -48,7 +48,7 @@ a:active {
 }
 
 a:hover {
-    color: #0066FF;
+    color: #666;
 }
 
 ul,
@@ -415,7 +415,7 @@ h2#comments {
 }
 
 .commentAuthor a:hover {
-    color: #888;
+    color: #666;
 }
 
 /* Front Page */
@@ -431,7 +431,6 @@ h2#comments {
 }
 
 .bubble a,
-.bubble a:hover,
 .bubble a:visited,
 .bubble a:link,
 .bubble a:active {
