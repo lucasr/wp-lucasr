@@ -464,11 +464,11 @@ h2#comments {
 }
 
 .tweet-info a {
-    color: #000;
+    color: #666;
 }
 
 .tweet-info a:hover {
-    color: #888;
+    color: #000;
 }
 
 p.intro {

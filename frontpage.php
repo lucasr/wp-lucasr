@@ -13,7 +13,7 @@ Template Name: Front Page
 <h1 class="tweet"><?php twitter_messages('lucasratmundo', 1, false, false, false, true, true, false); ?></h1>
 
 <div class="tweet-info">
-&#8212;Follow me on <a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Twitter</a>
+&#8212;<a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Follow me on Twitter</a>
 </div>
 
 <div class="postContent">
