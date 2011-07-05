@@ -464,7 +464,7 @@ h2#comments {
 }
 
 .bubblePointer a {
-    color: #333;
+    color: #000;
 }
 
 .bubblePointer a:hover {
