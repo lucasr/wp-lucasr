@@ -12,7 +12,7 @@ get_header(); ?>
 <h1 class="bubble"><?php twitter_messages('lucasratmundo', 1, false, false, false, true, true, false); ?></h1>
 
 <div class="postInfos bubblePointer">
-&#8212;Follow me on <a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Twitter</a> or <a title="Follow me on Identica" href="http://identi.ca/lucasr">Identica</a>
+&#8212;Follow me on <a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Twitter</a>
 </div> <!-- end of postInfos -->
 
 <div class="postContent">
