@@ -3,9 +3,9 @@
  * @package WordPress
  * @subpackage wp-lucasr
  */
-
-get_header();
 ?>
+
+<?php get_header(); ?>
 
 <div id="content">
 
@@ -13,6 +13,6 @@ get_header();
 
 <?php get_search_form(); ?>
 
-</div> <!-- end of content -->
+</div> <!-- .content -->
 
 <?php get_footer(); ?>
