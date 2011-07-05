@@ -2,8 +2,9 @@
 /*
 Template Name: Front Page
 */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
 <div id="content">
 
@@ -13,26 +14,42 @@ get_header(); ?>
 
 <div class="tweet-info">
 &#8212;Follow me on <a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Twitter</a>
-</div> <!-- end of postInfos -->
+</div>
 
 <div class="postContent">
 
-<p class="intro">Hi! I posted <?php query_posts('showposts=1'); ?>
+<p class="intro">
+
+Hi! I posted
+
+<!-- Show latest post title -->
+<?php query_posts('showposts=1'); ?>
+
 <?php while (have_posts()) : the_post(); ?>
 <a href="<?php the_permalink() ?>" title="<?php the_title(); ?> in my blog"><?php the_title(); ?></a>
 <?php endwhile;?>
-in my <a href="/blog">blog</a>. I'm now reading <?php bookshelf() ?>.
-I've been <a href="http://www.last.fm/user/lucasrocha" target="_blank" title="My Last.fm profile">listening</a> to music by <?php ilastfm(true); ?> lately. My latest
-uploaded photo is called <?php get_flickrRSS(); ?>. Have a look at the <a href="/about">about page</a> if you want to learn a bit about me.</p>
 
-<p>
+<!-- Link to blog index -->
+in my <a href="/blog">blog</a>.
 
-</p> <!-- end of photos -->
+<!-- Show an item from the 'reading' shelf in GoodReads -->
+I'm now reading <?php bookshelf() ?>.
 
-</div> <!-- end of postContent -->
+<!-- Show top 3 artists from the weekly chart in Last.fm -->
+I've been <a href="http://www.last.fm/user/lucasrocha" target="_blank" title="My Last.fm profile">listening</a> to music by <?php ilastfm(true); ?> lately.
 
-</div> <!-- end of post -->
+<!-- Link to latest photo in Flickr -->
+My latest uploaded photo is called <?php get_flickrRSS(); ?>.
 
-</div> <!-- end of content -->
+<!-- Link to about page -->
+Have a look at the <a href="/about">about page</a> if you want to learn a bit about me.</p>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 <? get_footer(); ?>
