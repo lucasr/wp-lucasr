@@ -9,9 +9,9 @@ get_header(); ?>
 
 <div <?php post_class('post clear') ?>>
 
-<h1 class="bubble"><?php twitter_messages('lucasratmundo', 1, false, false, false, true, true, false); ?></h1>
+<h1 class="tweet"><?php twitter_messages('lucasratmundo', 1, false, false, false, true, true, false); ?></h1>
 
-<div class="postInfos bubblePointer">
+<div class="tweet-info">
 &#8212;Follow me on <a title="Follow me on Twitter" href="http://www.twitter.com/lucasratmundo">Twitter</a>
 </div> <!-- end of postInfos -->
 

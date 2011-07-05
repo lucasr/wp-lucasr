@@ -432,7 +432,7 @@ h2#comments {
 
 /* Front Page */
 
-.bubble {
+.tweet {
     line-height: 1.3em;
     color: #000;
     padding: 0px;
@@ -441,19 +441,19 @@ h2#comments {
     margin-top: 60px;
 }
 
-.bubble a,
-.bubble a:visited,
-.bubble a:link,
-.bubble a:active {
+.tweet a,
+.tweet a:visited,
+.tweet a:link,
+.tweet a:active {
     color: #000;
     text-decoration: none;
 }
 
-.bubble a:hover {
+.tweet a:hover {
     color: #666;
 }
 
-.bubblePointer {
+.tweet-info {
     padding-bottom: 0px;
     padding-top: 6px;
     padding-left: 8px;
@@ -463,11 +463,11 @@ h2#comments {
     font-style: italic;
 }
 
-.bubblePointer a {
+.tweet-info a {
     color: #000;
 }
 
-.bubblePointer a:hover {
+.tweet-info a:hover {
     color: #888;
 }
 
