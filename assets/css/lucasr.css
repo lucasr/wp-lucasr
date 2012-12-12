@@ -189,8 +189,8 @@ ul.social > li {
   position: relative;
   display: inline-block;
   float: left;
-  width: 34px;
-  height: 34px;
+  width: 37px;
+  height: 37px;
   margin-right: 10px;
 }
 
@@ -204,7 +204,7 @@ ul.social > li a > img {
 }
 
 ul.social > li a > img.top:hover {
-  opacity: 0;
+  opacity: 0.0;
 }
 
 @media (max-width: 767px) {
