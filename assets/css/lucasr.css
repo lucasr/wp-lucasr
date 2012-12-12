@@ -1,0 +1,259 @@
+body {
+  font-family: "ff-tisa-web-pro",serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  border-top: 2px solid #ff9500;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navbar-inner {
+/*  opacity: 0.2;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+*/  background: none;
+  border: 0px;
+  padding: 0px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  min-height: 0px;
+}
+
+.navbar:hover .navbar-inner {
+/*  opacity: 1.0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+*/}
+
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:active,
+.navbar .nav > li > a:visited {
+  color: #aaaaaa;
+  margin: 2px 0px;
+  padding: 0px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .nav > li:last-child > a {
+  margin-right: 0px;
+}
+
+.navbar .nav > li > a:hover {
+  color: #666666;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:active,
+.navbar .nav > .active > a:visited {
+  padding: 0px;
+  background: none;
+  color: #666666;
+  border-bottom: 2px solid #666666;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 0.8em;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+.byline {
+  font-size: 0.85em;
+  font-family: "calluna";
+  font-style: italic;
+  color: #777777;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.author, .date {
+  font-style: normal;
+  font-family: "source-sans-pro";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #009bcc;
+}
+
+a.author:hover,
+a.author:active,
+a.author:visited {
+  color: #009bcc;
+}
+
+a.author:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.discuss {
+  display: block;
+  margin-top: 30px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+}
+
+.discuss {
+  font-size: 0.85em;
+  font-family: "calluna";
+  text-align: center;
+}
+
+.discuss > p {
+  margin-bottom: 0em;
+  font-style: italic;
+  text-align: inherit;
+  color: #777777;
+}
+
+.discuss > h2 {
+  font-size: 1.2em;
+  font-family: "source-sans-pro";
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0px 4px;
+  padding: 0px;
+}
+
+.about {
+  display: block;
+  font-size: 0.85em;
+  font-family: "calluna";
+  font-style: italic;
+  margin-top: 20px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+}
+
+.about > .avatar {
+  max-width: 100px;
+  height: auto;
+  float: left;
+  margin: 0px;
+}
+
+.about > p {
+  margin-left: 120px;
+  margin-bottom: 0.6em;
+}
+
+ul.social {
+  margin-left: 120px;
+  display: block;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.social > li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+ul.social > li a > img {
+  position: absolute;
+  left: 0px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+ul.social > li a > img.top:hover {
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .byline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .byline {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .content {
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+    width: 960px;
+  }
+}
