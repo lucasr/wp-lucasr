@@ -14,12 +14,7 @@ body {
 }
 
 .navbar-inner {
-/*  opacity: 0.2;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-*/  background: none;
+  background: none;
   border: 0px;
   padding: 0px;
   padding-top: 3px;
@@ -32,14 +27,6 @@ body {
   box-shadow: none;
   min-height: 0px;
 }
-
-.navbar:hover .navbar-inner {
-/*  opacity: 1.0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-*/}
 
 .navbar .nav > li > a,
 .navbar .nav > li > a:hover,
