@@ -189,9 +189,9 @@ ul.social > li {
   position: relative;
   display: inline-block;
   float: left;
-  width: 37px;
-  height: 37px;
-  margin-right: 10px;
+  width: 29px;
+  height: 29px;
+  margin-right: 8px;
 }
 
 ul.social > li a > img {
