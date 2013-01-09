@@ -1,7 +1,6 @@
 body {
   font-family: "ff-tisa-web-pro",serif;
   font-size: 18px;
-  margin-bottom: 30px;
 }
 
 .navbar {
@@ -133,7 +132,8 @@ a.author:hover {
   color: #777777;
 }
 
-.discuss > h2 {
+.discuss h2,
+.archives h2 {
   font-size: 1.2em;
   font-family: "source-sans-pro";
   text-transform: uppercase;
@@ -141,6 +141,10 @@ a.author:hover {
   line-height: 1.3em;
   margin: 0px 4px;
   padding: 0px;
+}
+
+.archives h2 {
+  margin-bottom: 10px;
 }
 
 .about {
@@ -194,6 +198,22 @@ ul.social > li a > img.top:hover {
   opacity: 0.0;
 }
 
+.archives {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.archives td {
+  border-top: 0px;
+}
+
+.archives .span6 {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 767px) {
   body {
     padding-left: 0px;
@@ -213,6 +233,23 @@ ul.social > li a > img.top:hover {
   .content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .about > .avatar {
+    display: none;
+  }
+
+  .about > p {
+    margin-left: 0px;
+  }
+
+  ul.social {
+    margin-left: 0px;
+  }
+
+  .archives {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -236,6 +273,11 @@ ul.social > li a > img.top:hover {
     padding: 0px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .archives {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
