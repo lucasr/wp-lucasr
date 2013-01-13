@@ -1,14 +1,14 @@
 body {
   font-family: "ff-tisa-web-pro",serif;
   font-size: 20px;
-  color: #444444;
+  color: #333333;
   font-weight: 400;
+  border-top: 4px solid #ff9500;
 }
 
 h1 {
-  font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-size: 2.1em;
-  margin-top: 45px;
+  margin-top: 30px;
   text-align: center;
   color: #0088cc;
   font-weight: 700;
@@ -18,9 +18,19 @@ h1 {
 
 h2 {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 4px 0px;
+  margin-top: 1em;
+  padding: 0px;
+}
+
+h3 {
+  font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-size: 1.2em;
   font-weight: 700;
-  margin: 0px 4px;
+  margin: 4px 0px;
+  margin-top: 0.8em;
   padding: 0px;
 }
 
@@ -35,30 +45,26 @@ p {
   hyphens: auto;
 }
 
-.container {
-  border-top: 3px solid #ff9500;
-  border-bottom: 3px solid #ff9500;
-}
-
 .home {
-  font-family: "brandon-grotesque",sans-serif;
-  font-size: 0.65em;
+  font-family: "futura-pt",sans-serif;
+  font-size: 0.85em;
   display: block;
   text-transform: uppercase;
-  font-weight: 400;
-  color: #666666;
-  margin-top: 4px;
+  font-weight: 500;
+  color: #444444;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .home > a,
 .home > a:hover,
 .home > a:active,
 .home > a:visited {
+  font-size: 1.03em;
   border-right: 1px solid #cccccc;
   padding-right: 5px;
   margin-right: 5px;
-  font-weight: 900;
-  color: #333333;
+  color: #444444;
 }
 
 .home > a:hover {
@@ -67,22 +73,22 @@ p {
 }
 
 .date {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-size: 0.80em;
-  color: #444444;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   padding-left: 10px;
   padding-right: 10px;
+  color: #999999;
 }
 
 .feature {
-  margin-top: 40px;
+  margin-top: 1.4em;
 }
 
 .content {
-  margin-top: 40px;
+  margin-top: 1.4em;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -90,7 +96,7 @@ p {
 .discuss {
   display: block;
   margin-top: 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   padding-top: 10px;
   font-size: 0.85em;
   font-style: italic;
@@ -105,30 +111,31 @@ p {
   display: block;
   font-style: italic;
   margin-top: 10px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #666666;
 }
 
 .author {
-  font-family: "brandon-grotesque",sans-serif;
-  font-size: 0.95em;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   font-style: normal;
+  margin-right: 1px;
   color: #333333;
 }
 
 .about > .avatar {
+  display: block;
   max-width: 100px;
   height: auto;
   float: left;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .about > p {
-  margin-left: 120px;
-  margin-top: 0em;
+  line-height: 1.3em;
+  margin-top: 8px;
   margin-bottom: 0px;
 }
 
@@ -136,10 +143,30 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
+}
+
+.archives a,
+.archives a:hover,
+.archives a:visited,
+.archives a:active {
+  color: #555555;
+  border-bottom: 1px dotted #bbbbbb;
+}
+
+.archives a:hover {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.archives h3 {
+  margin-top: 4px;
 }
 
 .archives td {
+  padding-left: 0px;
+  padding-top: 3px;
+  font-size: 0.90em;
   border-top: 0px;
 }
 
@@ -149,7 +176,19 @@ p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    line-height: 1em;
+  }
+
+  .about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about > .avatar {
+    float: none;
+    margin: 0px auto;
+    margin-bottom: 16px;
   }
 }
 
@@ -159,23 +198,9 @@ p {
     padding-right: 0px;
   }
 
-  .home {
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .content {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .about > .avatar {
-    display: none;
-  }
-
-  .about > p {
-    margin-left: 0px;
   }
 
   .archives {
@@ -190,11 +215,6 @@ p {
     padding-right: 0px;
   }
 
-  .navbar {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .content {
     padding: 0px;
     padding-left: 0px;
@@ -204,6 +224,16 @@ p {
   .archives {
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    border-top: 0px;
+  }
+
+  .container {
+    border-top: 4px solid #ff9500;
   }
 }
 
