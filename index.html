@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="utf-8">
-    <title>Lucas Rocha</title>
+    <title>Lucas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lucas Rocha">
     <meta name="author" content="Lucas Rocha">
@@ -85,6 +85,7 @@
             <h3>Recent Posts</h3>
             <table class="table">
               <tbody>
+                <?php $recent_posts = lucasr_get_recent_posts(); ?>
                 <tr>
                   <td><a href="">Introducing Smoothie</a></td>
                 </tr>
@@ -132,6 +133,10 @@
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="assets/js/bootstrap.min.js">
+    </script>
     <script type="text/javascript" src="//use.typekit.net/tww7dlq.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </body>

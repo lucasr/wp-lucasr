@@ -1,0 +1,376 @@
+/*
+Theme Name: lucasr
+Theme URI: https://github.com/lucasr/wp-lucasr
+Description: WordPress theme for lucasr.org.
+Author: Lucas Rocha <lucasr@lucasr.org>
+Author URI: http://lucasr.org/
+Tags: minimal, magazine, typography, clean, fixed-width, white
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Global */
+
+body {
+  font-family: "ff-tisa-web-pro",serif;
+  font-size: 20px;
+  color: #444444;
+  font-weight: 400;
+  border-top: 4px solid #ff9500;
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "ff-tisa-sans-web-pro",sans-serif;
+  font-weight: 700;
+  margin: 4px 0px;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 0.8em;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+ul,
+ol {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;  
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/* Header */
+
+.site-header {
+  display: block;
+}
+
+.site-header > h1 {
+  font-family: "futura-pt",sans-serif;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444444;
+  margin-top: 20px;
+}
+
+.site-header > h1 > a,
+.site-header > h1 > a:hover,
+.site-header > h1 > a:active,
+.site-header > h1 > a:visited {
+  font-size: 1.03em;
+  border-right: 1px solid #cccccc;
+  padding-right: 8px;
+  margin-right: 5px;
+  color: #444444;
+}
+
+.site-header > h1 > a:hover {
+  text-decoration: none;
+  color: #666666;
+}
+
+/* Entry */
+
+.entry-title {
+  font-family: "ff-tisa-web-pro",serif;
+  margin-top: 30px;
+  text-align: center;
+  color: #0088cc;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.entry-title a,
+.entry-title a:active,
+.entry-title a:visited {
+  color: #0088cc;
+}
+
+.entry-title a:hover {
+  text-decoration: none;
+  color: #009cea;
+}
+
+.entry-excerpt,
+.entry-date {
+  font-family: "futura-pt",sans-serif;
+  font-size: 0.80em;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+  color: #999999;
+}
+
+.entry-image {
+  margin-top: 1.4em;
+}
+
+.entry-summary,
+.entry-content {
+  padding-left: 100px;
+  padding-right: 100px;  
+  margin-top: 1.4em;
+}
+
+.entry-content a,
+.entry-content a:hover,
+.entry-content a:active,
+.entry-content a:visited {
+  color: #222222;
+  text-decoration: underline;
+}
+
+.entry-content a:hover {
+  color: #0088cc;
+}
+
+.entry-discuss,
+.entry-meta {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.entry-discuss {
+  display: block;
+  margin-top: 30px;
+  border-top: 1px solid #dddddd;
+  padding-top: 10px;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.entry-discuss > p {
+  text-align: center;
+}
+
+.entry-meta {
+  font-size: 0.90em;
+  display: block;
+  font-style: italic;
+  margin-top: 10px;
+  border-top: 1px solid #dddddd;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.entry-author {
+  font-weight: bold;
+  font-style: normal;
+  margin-right: 1px;
+  color: #333333;
+}
+
+.entry-meta > .avatar {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  float: left;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+.entry-meta > p {
+  line-height: 1.3em;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+/* Wordpress */
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.entry-image .caption-text,
+.wp-caption .wp-caption-text {
+  font-family: "futura-pt",sans-serif;
+  font-size: 0.60em;
+  font-weight: 500;
+  color: #999999;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+.wp-caption img {
+  border: 1px solid #dddddd;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/* Archives */
+
+.archives {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 30px;
+  border-top: 1px solid #dddddd;
+}
+
+.archives a,
+.archives a:hover,
+.archives a:visited,
+.archives a:active {
+  color: #555555;
+  border-bottom: 1px dotted #bbbbbb;
+}
+
+.archives a:hover {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.archives h3 {
+  margin-top: 4px;
+}
+
+.archives td {
+  padding-left: 0px;
+  padding-top: 3px;
+  font-size: 0.90em;
+  border-top: 0px;
+}
+
+.archives .span6 {
+  margin-bottom: 20px;
+}
+
+/* Responsive bits */
+
+@media (max-width: 480px) {
+  .entry-title {
+    font-size: 1.6em;
+    line-height: 1em;
+  }
+
+  .entry-meta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .entry-meta > .avatar {
+    float: none;
+    margin: 0px auto;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .entry-summary,
+  .entry-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .archives,
+  .entry-discuss,
+  .entry-meta {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+.entry-summary,
+.entry-content {
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .archives,
+  .entry-discuss,
+  .entry-meta {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    border-top: 0px;
+  }
+
+  .container {
+    border-top: 4px solid #ff9500;
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+    width: 960px;
+  }
+}
