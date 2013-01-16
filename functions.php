@@ -45,12 +45,15 @@ add_filter( 'wp_title', 'lucasr_wp_title', 10, 2 );
 
 
 function lucasr_scripts_styles() {
-    wp_enqueue_style( 'lucasr-boostrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-    wp_enqueue_style( 'lucasr-boostrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.min.css', array( 'lucasr-boostrap' ) );
-    wp_enqueue_style( 'lucasr-style', get_stylesheet_uri(), array( 'lucasr-boostrap', 'lucasr-boostrap-responsive' ) );
+    wp_enqueue_style( 'lucasr-boostrap', get_template_directory_uri() . '/css/bootstrap.min.css', false, '2.2.2' );
+    wp_enqueue_style( 'lucasr-boostrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.min.css', array( 'lucasr-boostrap' ), '2.2.2' );
+    wp_enqueue_style( 'lucasr-style', get_stylesheet_uri(), array( 'lucasr-boostrap', 'lucasr-boostrap-responsive' ), '1.0' );
 
-    wp_enqueue_script( 'lucasr-picturefill', get_template_directory_uri() . '/js/picturefill.min.js', array(), false, true );
-    wp_enqueue_script( 'lucasr-typekit', 'http://use.typekit.net/tww7dlq.js', array(), false, true );
+    wp_register_script('lucasr-jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', false, '1.8.3', true);
+    wp_enqueue_script( 'lucasr-boostrapfix', get_template_directory_uri() . '/js/bootstrapfix.js', array( 'lucasr-jquery' ), '1.0', true );
+
+    wp_enqueue_script( 'lucasr-picturefill', get_template_directory_uri() . '/js/picturefill.min.js', false, '1.0', true );
+    wp_enqueue_script( 'lucasr-typekit', 'http://use.typekit.net/tww7dlq.js', false, '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'lucasr_scripts_styles' );
 
