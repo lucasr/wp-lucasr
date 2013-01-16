@@ -11,10 +11,10 @@ function lucasr_setup() {
     load_theme_textdomain( 'lucasr', get_template_directory() . '/languages' );
 
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'hero-image-desktop', 960, 400, true );
-    add_image_size( 'hero-image-tablet', 960, 400, true );
-    add_image_size( 'hero-image-phone', 960, 400, true );
-    set_post_thumbnail_size( 960, 400 );
+    add_image_size( 'hero-image-large', 960, 400 );
+    add_image_size( 'hero-image-tablet', 768, 320 );
+    add_image_size( 'hero-image-small', 480, 200 );
+    set_post_thumbnail_size( 480, 200 );
 
     add_post_type_support( 'page', 'excerpt' );
 }
@@ -74,12 +74,24 @@ function lucasr_delete_cache_on_new_post() {
 add_action( 'publish_post', 'lucasr_delete_cache_on_new_post' );
 
 
+function lucasr_filter_image_sizes( $sizes ) {
+    unset( $sizes['thumbnail'] );
+    unset( $sizes['medium'] );
+    unset( $sizes['large'] );
+
+    return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'lucasr_filter_image_sizes');
+
+
 function lucasr_custom_image_sizes( $sizes ) {
         unset( $sizes['medium'] );
         unset( $sizes['large'] );
 
         $my_img_sizes = array(
-            "hero-image" => __( 'Hero', 'lucasr' )
+            "hero-image-large" => __( 'Hero (Large)', 'lucasr' ),
+            "hero-image-tablet" => __( 'Hero (Medium)', 'lucasr' ),
+            "hero-image-small" => __( 'Hero (Small)', 'lucasr' )
         );
 
         $new_img_sizes = array_merge( $sizes, $my_img_sizes );
@@ -93,7 +105,22 @@ function lucasr_the_post_thumbnail_caption() {
     if ( $thumbnail_id !== null )
         echo get_post( $thumbnail_id )->post_excerpt;
     else
-        _e( 'No caption', 'lucasr' );
+        echo __( 'No caption', 'lucasr' );
+}
+
+
+function lucasr_the_post_thumbnail_small() {
+    echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 480, 200 ) )[0];
+}
+
+
+function lucasr_the_post_thumbnail_medium() {
+    echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 768, 320 ) )[0];
+}
+
+
+function lucasr_the_post_thumbnail_large() {
+    echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 960, 400 ) )[0];
 }
 
 
