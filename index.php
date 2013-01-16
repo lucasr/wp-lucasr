@@ -20,7 +20,7 @@ get_header();?>
 
           <?php else : ?>
 
-            <!-- Show no posts UI here -->
+            <?php get_template_part( 'content', 'none' ); ?>
 
           <?php endif; // end have_posts() check ?>
 
