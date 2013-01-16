@@ -87,6 +87,18 @@ function lucasr_filter_image_sizes( $sizes ) {
 add_filter('intermediate_image_sizes_advanced', 'lucasr_filter_image_sizes');
 
 
+function lucasr_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'lucasr_custom_excerpt_length', 999 );
+
+
+function lucasr_new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'lucasr_new_excerpt_more');
+
+
 function lucasr_custom_image_sizes( $sizes ) {
         unset( $sizes['medium'] );
         unset( $sizes['large'] );
