@@ -153,18 +153,6 @@ blockquote {
   margin-top: 1.4em;
 }
 
-.entry-content a,
-.entry-content a:hover,
-.entry-content a:active,
-.entry-content a:visited {
-  color: #222222;
-  text-decoration: underline;
-}
-
-.entry-content a:hover {
-  color: #0088cc;
-}
-
 .entry-discuss,
 .entry-meta {
   margin-left: 100px;
