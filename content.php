@@ -21,7 +21,7 @@
                 </h1>
                 <?php endif; ?>
 
-                <h2 class="entry-date"><?php the_date( 'F j, Y' ); ?></h2>
+                <h2 class="entry-date"><?php the_date( _x( 'F j, Y', 'post date format', 'lucasr' ) ); ?></h2>
               </hgroup>
 
               <?php if ( has_post_thumbnail() ) : ?>
@@ -55,8 +55,8 @@
             </div> <!-- .entry-content -->
 
             <div class="entry-discuss">
-              <p>Got something to add? Find me on <a href="http://twitter.com/lucasratmundo" title="Tweet to @lucasratmundo">Twitter</a>
-              and <a href="http://gplus.to/lucasr" title="Find me on Google+">Google+</a></p>
+              <p><?php _e(' Got something to add? Find me on <a href="http://twitter.com/lucasratmundo" title="Tweet to @lucasratmundo">Twitter</a>
+              and <a href="http://gplus.to/lucasr" title="Find me on Google+">Google+</a>' ); ?></p>
             </div> <!-- .entry-discuss -->
 
             <div class="entry-meta">
