@@ -75,6 +75,20 @@ blockquote {
   font-style: italic;
 }
 
+/* Bootstrap */
+
+.thumbnail {
+  border: 0px;
+  padding: 10px;
+  --webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.first-in-row {
+  margin-left: 0 !important;
+}
+
 /* Header */
 
 .site-header {
@@ -129,6 +143,16 @@ blockquote {
   color: #009cea;
 }
 
+.thumbnail .entry-title {
+  font-size: 1.4em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+}
+
 .entry-excerpt,
 .entry-date {
   font-family: "futura-pt",sans-serif;
@@ -146,11 +170,24 @@ blockquote {
   margin-top: 1.4em;
 }
 
+.thumbnail .entry-image {
+  margin-top: 0.4em;
+}
+
 .entry-summary,
 .entry-content {
   padding-left: 100px;
   padding-right: 100px;  
   margin-top: 1.4em;
+}
+
+.thumbnail .entry-summary,
+.thumbnail .entry-content {
+  font-size: 0.8em;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 1em;
+  line-height: 1.3em;
 }
 
 .entry-discuss,
