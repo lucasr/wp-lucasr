@@ -26,22 +26,24 @@ h2,
 h3 {
   font-family: "ff-tisa-sans-web-pro",sans-serif;
   font-weight: 700;
-  margin: 4px 0px;
-  margin-top: 1em;
 }
 
 h1 {
   font-size: 2.1em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
 }
 
 h2 {
   font-size: 1.4em;
-  margin-bottom: 0px;
+  margin-top: 1em;
+  margin-bottom: 0em;
 }
 
 h3 {
   font-size: 1.2em;
-  margin-bottom: 0px;
+  margin-top: 1em;
+  margin-bottom: 0em;
 }
 
 p {
