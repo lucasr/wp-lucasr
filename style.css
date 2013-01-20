@@ -59,22 +59,24 @@ p {
 
 ul,
 ol {
-  margin-top: 1.0em;
-  margin-bottom: 1.5em;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 li {
+  line-height: 1.6em;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
 
 blockquote {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;  
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  font-style: italic;
 }
 
-blockquote {
-  font-style: italic;
+blockquote p {
+  font-size: 0.9em;
 }
 
 /* Bootstrap */
