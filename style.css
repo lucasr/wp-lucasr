@@ -79,6 +79,15 @@ blockquote {
 
 /* Bootstrap */
 
+.pagination {
+  font-family: "futura-pt",sans-serif;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
 .thumbnail {
   border: 0px;
   --webkit-box-shadow: none;

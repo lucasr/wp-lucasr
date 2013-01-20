@@ -34,6 +34,10 @@ get_header();?>
 
             </ul>
 
+            <div class="pagination">
+              <?php lucasr_the_pagination_links(); ?>
+            </div>
+
           <?php else : ?>
 
             <?php get_template_part( 'content', 'none' ); ?>

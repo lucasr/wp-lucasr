@@ -102,6 +102,15 @@ function lucasr_custom_image_sizes( $sizes ) {
 add_filter('image_size_names_choose', 'lucasr_custom_image_sizes');
 
 
+function lucasr_change_search_size( $query ) {
+    if ( $query->is_search  || $query->is_archive )
+        $query->query_vars['posts_per_page'] = 10;
+
+    return $query;
+}
+add_filter( 'pre_get_posts', 'lucasr_change_search_size' );
+
+
 function lucasr_the_post_thumbnail_caption() {
     $thumbnail_id = get_post_thumbnail_id();
     if ( $thumbnail_id !== null )
@@ -151,5 +160,29 @@ function lucasr_get_recent_posts() {
     }
 
     return $recent_posts;
+}
+
+
+function lucasr_the_pagination_links() {
+    global $wp_query;
+
+    if ( $wp_query->query_vars['paged'] > 1 )
+        $current = $wp_query->query_vars['paged'];
+    else
+        $current = 1;
+
+    $big = 999999999;
+
+    echo paginate_links( array(
+        'base' => @add_query_arg('paged','%#%'),
+        'format' => '?paged=%#%',
+        'current' => $current,
+        'total' => $wp_query->max_num_pages,
+        'show_all' => true,
+        'prev_next' => true,
+        'prev_text' => __('Previous', 'lucasr' ),
+        'next_text' => __('Next', 'lucasr' ),
+        'type' => 'list'
+    ) );
 }
 ?>
