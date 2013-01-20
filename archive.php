@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The template file for the archive pages.
  *
  * @package WordPress
  * @subpackage lucasr
@@ -19,11 +19,17 @@ get_header();?>
               <hgroup>
                 <h1 class="archive-title"><?php
                   if ( is_day() ) :
-                    _e( 'Daily Archives', 'lucasr' );
+                    printf( __( 'Archives: %s', 'lucasr' ), get_the_date() );
                   elseif ( is_month() ) :
-                    _e( 'Monthly Archives', 'lucasr' );
+                    printf( __( 'Archives: %s', 'lucasr' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'lucasr' ) ) );
                   elseif ( is_year() ) :
-                    _e( 'Yearly Archives', 'lucasr' );
+                    printf( __( 'Archives: %s', 'lucasr' ), get_the_date( _x( 'Y', 'yearly archives date format', 'lucasr' ) ) );
+                  elseif ( is_category() ) :
+                    printf( __( 'Category: %s', 'lucasr' ),  single_cat_title( '', false ) );
+                  elseif ( is_tag() ) :
+                    printf( __( 'Tag: %s', 'lucasr' ), single_tag_title( '', false ) );
+                  elseif ( is_author() ) :
+                    printf( __( 'Author: %s', 'lucasr' ), 'Lucas Rocha' );
                   else :
                     _e( 'Archives', 'lucasr' );
                   endif;

@@ -81,11 +81,10 @@ blockquote {
 
 .thumbnail {
   border: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   --webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  padding: 0px;
 }
 
 .first-in-row {
@@ -232,6 +231,16 @@ blockquote {
 
 /* Wordpress */
 
+#searchform {
+  text-align: center;
+}
+
+#searchform .btn {
+  font-family: "futura-pt",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .alignleft {
   float: left;
 }
@@ -271,8 +280,11 @@ blockquote {
   margin-bottom: 0px;
 }
 
-/* drchives */
+.entry-content img {
+  margin-bottom: 1.6em;
+}
 
+/* archives */
 
 .home .archive {
   padding-left: 100px;
@@ -282,12 +294,12 @@ blockquote {
 .archive-title {
   font-family: "ff-tisa-web-pro",serif;
   margin-top: 30px;
+  margin-bottom: 40px;
   text-align: center;
-  color: #0088cc;
+  color: #666666;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 
 .archive .entry-title {
   font-size: 1.2em;
@@ -297,9 +309,11 @@ blockquote {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
+  margin-bottom: 2px;
 }
 
 .archive .entry-date {
+  font-size: 0.70em;
   line-height: 1.3em;
 }
 
@@ -319,7 +333,8 @@ blockquote {
 /* Responsive bits */
 
 @media (max-width: 480px) {
-  .entry-title {
+  .entry-title,
+  .archive-title {
     font-size: 1.6em;
     line-height: 1em;
   }

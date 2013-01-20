@@ -17,7 +17,7 @@
                   <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'lucasr' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
                 </h1>
 
-                <h2 class="entry-date">AA<?php the_date( _x( 'F j, Y', 'post date format', 'lucasr' ) ); ?></h2>
+                <h2 class="entry-date"><?php the_time( _x( 'F j, Y', 'post date format', 'lucasr' ) ); ?></h2>
               </hgroup>
 
               <?php if ( has_post_thumbnail() ) : ?>
@@ -54,9 +54,5 @@
               <?php endif; ?>
 
             </header> <!-- .entry-header -->
-
-            <div class="entry-summary">
-              <?php the_excerpt(); ?>
-            </div> <!-- .entry-summary -->
 
           </article> <!-- #post -->

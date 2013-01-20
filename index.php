@@ -28,6 +28,8 @@ get_header();?>
 
       </div> <!-- row-fluid -->
 
+      <?php if ( have_posts() ) : ?>
+
       <div class="row-fluid">
 
         <div class="span12">
@@ -60,5 +62,7 @@ get_header();?>
         </div> <!-- .span12 -->
 
       </div> <!-- .row-fluid -->
+
+      <?php endif; // end have_posts() check ?>
 
 <?php get_footer(); ?>
