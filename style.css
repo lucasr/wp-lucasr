@@ -363,6 +363,7 @@ blockquote {
     overflow: visible;
   }
 
+  .thumbnails,
   .home .archive,
   .entry-summary,
   .entry-content {
