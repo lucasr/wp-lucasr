@@ -30,73 +30,34 @@ get_header();?>
 
       <div class="row-fluid">
 
-        <div class="archives">
+        <div class="span12">
 
-          <div class="span6">
+          <?php $recent_posts = lucasr_get_recent_posts(); ?>
 
-            <h3>Recent Posts</h3>
+          <?php if ( $recent_posts->have_posts() ) : ?>
 
-            <?php $recent_posts = lucasr_get_recent_posts(); ?>
+            <ul class="archive thumbnails">
 
-            <table class="table">
-              <tbody>
+            <?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
+              <li class="span6">
+                <div class="thumbnail">
+                  <?php get_template_part( 'content', 'list' ); ?>
+                </div>
+              </li>
+            <?php endwhile; ?>
 
-                <?php if ( $recent_posts->have_posts() ) : ?>
+            <?php wp_reset_query(); ?>
+            <?php wp_reset_postdata(); ?>
 
-                  <?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
-                    <tr>
-                      <td><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
-                    </tr>
-                  <?php endwhile; ?>
+            </ul>
 
-                  <?php wp_reset_query(); ?>
-                  <?php wp_reset_postdata(); ?>
+          <?php else : ?>
 
-                <?php else : ?>
+            <!-- Show no posts UI here -->
 
-                  <!-- Show no posts UI here -->
-                  Nope.
+          <?php endif; // end $recent_posts->have_posts() check ?>
 
-                <?php endif; // end $recent_posts->have_posts() check ?>
-
-              </tbody>
-            </table>
-
-          </div> <!-- .span6 -->
-
-          <div class="span6">
-
-            <h3>Most Popular</h3>
-
-            <?php $popular_posts = lucasr_get_popular_posts(); ?>
-
-            <table class="table">
-              <tbody>
-
-                <?php if ( $popular_posts->have_posts() ) : ?>
-
-                  <?php while ( $popular_posts->have_posts() ) : $popular_posts->the_post(); ?>
-                    <tr>
-                      <td><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
-                    </tr>
-                  <?php endwhile; ?>
-
-                  <?php wp_reset_query(); ?>
-                  <?php wp_reset_postdata(); ?>
-
-                <?php else : ?>
-
-                  <!-- Show no posts UI here -->
-                  Nope.
-
-                <?php endif; // end $popular_posts->have_posts() check ?>
-
-              </tbody>
-            </table>
-
-          </div> <!-- .span6 -->
-
-        </div> <!-- .archives -->
+        </div> <!-- .span12 -->
 
       </div> <!-- .row-fluid -->
 

@@ -17,7 +17,7 @@ get_header();?>
             <header class="entry-header">
 
               <hgroup>
-                <h1 class="entry-title"><?php
+                <h1 class="archive-title"><?php
                   if ( is_day() ) :
                     _e( 'Daily Archives', 'lucasr' );
                   elseif ( is_month() ) :
@@ -28,22 +28,11 @@ get_header();?>
                     _e( 'Archives', 'lucasr' );
                   endif;
                   ?></h1>
-                <h2 class="entry-date"><?php
-                  if ( is_day() ) :
-                    echo get_the_date();
-                  elseif ( is_month() ) :
-                    echo get_the_date( _x( 'F Y', 'monthly archives date format', 'lucasr' ) );
-                  elseif ( is_year() ) :
-                    echo get_the_date( _x( 'Y', 'yearly archives date format', 'lucasr' ) );
-                  else :
-                    _e( 'Archives', 'lucasr' );
-                  endif;
-                  ?></h2>
               </hgroup>
 
             </header>
 
-            <ul class="thumbnails">
+            <ul class="archive thumbnails">
 
             <?php while ( have_posts() ) : the_post(); ?>
               <li class="span6">

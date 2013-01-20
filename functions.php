@@ -72,7 +72,6 @@ add_action( 'pre_get_posts', 'lucasr_home_pagesize', 1 );
 
 function lucasr_delete_cache_on_new_post() {
      delete_transient( 'recent_posts' );
-     delete_transient( 'popular_posts' );
 }
 add_action( 'publish_post', 'lucasr_delete_cache_on_new_post' );
 
@@ -154,7 +153,7 @@ function lucasr_get_recent_posts() {
 
     if ( $recent_posts === false ) {
         $recent_posts = new WP_Query( array(
-            'posts_per_page' => 5,
+            'posts_per_page' => 4,
             'offset' => 1,
             'order' => 'DESC',
             'orderby' => 'date'
@@ -164,22 +163,5 @@ function lucasr_get_recent_posts() {
     }
 
     return $recent_posts;
-}
-
-
-function lucasr_get_popular_posts() {
-    $popular_posts = get_transient( 'popular_posts' );
-
-    if ( $popular_posts === false ) {
-        $popular_posts = new WP_Query( array(
-            'meta_key' => 'post_views_count',
-            'orderby' => 'meta_value_num',
-            'posts_per_page' => 5
-        ) );
-
-        set_transient( 'popular_posts', $popular_posts, 24 * HOUR_IN_SECONDS );
-    }
-
-    return $popular_posts;
 }
 ?>

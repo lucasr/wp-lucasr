@@ -81,7 +81,8 @@ blockquote {
 
 .thumbnail {
   border: 0px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   --webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -145,16 +146,6 @@ blockquote {
   color: #009cea;
 }
 
-.thumbnail .entry-title {
-  font-size: 1.4em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 0px;
-}
-
 .entry-excerpt,
 .entry-date {
   font-family: "futura-pt",sans-serif;
@@ -172,24 +163,11 @@ blockquote {
   margin-top: 1.4em;
 }
 
-.thumbnail .entry-image {
-  margin-top: 0.4em;
-}
-
 .entry-summary,
 .entry-content {
   padding-left: 100px;
   padding-right: 100px;  
   margin-top: 1.4em;
-}
-
-.thumbnail .entry-summary,
-.thumbnail .entry-content {
-  font-size: 0.8em;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-top: 1em;
-  line-height: 1.3em;
 }
 
 .entry-discuss,
@@ -201,7 +179,7 @@ blockquote {
 .entry-discuss {
   display: block;
   margin-top: 30px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #eeeeee;
   padding-top: 10px;
   font-size: 0.85em;
   font-style: italic;
@@ -216,9 +194,14 @@ blockquote {
   display: block;
   font-style: italic;
   margin-top: 10px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.single .entry-meta {
+  border-bottom: 0px;
 }
 
 .entry-author {
@@ -288,41 +271,49 @@ blockquote {
   margin-bottom: 0px;
 }
 
-/* Archives */
+/* drchives */
 
-.archives {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 30px;
-  border-top: 1px solid #dddddd;
+
+.home .archive {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.archives a,
-.archives a:hover,
-.archives a:visited,
-.archives a:active {
-  color: #555555;
-  border-bottom: 1px dotted #bbbbbb;
-}
-
-.archives a:hover {
+.archive-title {
+  font-family: "ff-tisa-web-pro",serif;
+  margin-top: 30px;
+  text-align: center;
   color: #0088cc;
-  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.archives h3 {
-  margin-top: 4px;
+
+.archive .entry-title {
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
 }
 
-.archives td {
+.archive .entry-date {
+  line-height: 1.3em;
+}
+
+.archive .entry-image {
+  margin-top: 0.4em;
+}
+
+.archive .entry-summary,
+.archive .entry-content {
+  font-size: 0.8em;
   padding-left: 0px;
-  padding-top: 3px;
-  font-size: 0.90em;
-  border-top: 0px;
-}
-
-.archives .span6 {
-  margin-bottom: 20px;
+  padding-right: 0px;
+  margin-top: 1em;
+  line-height: 1.3em;
 }
 
 /* Responsive bits */
@@ -351,13 +342,19 @@ blockquote {
     padding-right: 0px;
   }
 
+  .archive .entry-title {
+    line-height: 1.1em;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .home .archive,
   .entry-summary,
   .entry-content {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .archives,
   .entry-discuss,
   .entry-meta {
     margin-left: 20px;
@@ -371,14 +368,14 @@ blockquote {
     padding-right: 0px;
   }
 
-.entry-summary,
-.entry-content {
+  .home .archive,
+  .entry-summary,
+  .entry-content {
     padding: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .archives,
   .entry-discuss,
   .entry-meta {
     margin-left: 0px;
