@@ -315,11 +315,11 @@ blockquote p {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 .archive .entry-date {
-  font-size: 0.70em;
+  font-size: 0.65em;
   line-height: 1.3em;
 }
 
