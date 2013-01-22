@@ -27,16 +27,16 @@
               <?php if ( has_post_thumbnail() ) : ?>
               <div class="entry-image">
                 <div data-picture data-alt="<?php lucasr_the_post_thumbnail_caption(); ?>">
-                  <div data-src="<?php lucasr_the_post_thumbnail_small(); ?>"></div>
-                  <div data-src="<?php lucasr_the_post_thumbnail_medium(); ?>" data-media="(min-width: 480px)"></div>
-                  <div data-src="<?php lucasr_the_post_thumbnail_large(); ?>" data-media="(min-width: 960px)"></div>
+                  <div data-src="<?php lucasr_the_post_thumbnail ( 'small', false ); ?>"></div>
+                  <div data-src="<?php lucasr_the_post_thumbnail ( 'medium', false ); ?>" data-media="(min-width: 480px)"></div>
+                  <div data-src="<?php lucasr_the_post_thumbnail ( 'large', false ); ?>" data-media="(min-width: 960px)"></div>
 
                   <!--[if (lt IE 9) & (!IEMobile)]>
-                      <div data-src="<?php lucasr_the_post_thumbnail_large(); ?>" data-media="(min-width: 960px)">
+                      <div data-src="<?php lucasr_the_post_thumbnail( 'large', false ); ?>" data-media="(min-width: 960px)">
                   <![endif]-->
 
                   <noscript>
-                    <img src="<?php lucasr_the_post_thumbnail_large(); ?>" alt="<?php lucasr_the_post_thumbnail_caption(); ?>">
+                    <img src="<?php lucasr_the_post_thumbnail ( 'large', false ); ?>" alt="<?php lucasr_the_post_thumbnail_caption(); ?>">
                   </noscript>
                 </div>
                 <p class="caption-text"><?php lucasr_the_post_thumbnail_caption() ?></p>

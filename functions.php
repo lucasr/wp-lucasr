@@ -120,21 +120,29 @@ function lucasr_the_post_thumbnail_caption() {
 }
 
 
-function lucasr_the_post_thumbnail_small() {
-    $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 480, 200 ) );
-    echo $images[0];
-}
+function lucasr_the_post_thumbnail( $size, $placeholder ) {
+    $images = null;
 
+    if ( has_post_thumbnail() ) {
+        if ( $size === 'small' )
+            $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 480, 200 ) );
+        elseif ( $size === 'medium' )
+            $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 768, 320 ) );
+        elseif ( $size === 'large' )
+            $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 960, 400 ) );
+    }
 
-function lucasr_the_post_thumbnail_medium() {
-    $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 768, 320 ) );
-    echo $images[0];
-}
-
-
-function lucasr_the_post_thumbnail_large() {
-    $images = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), array( 960, 400 ) );
-    echo $images[0];
+    if ( $images != null ) {
+        echo $images[0];
+    } elseif ( $placeholder ) {
+        if ( $size === 'small' )
+            echo 'http://placehold.it/480x200';
+        elseif ( $size === 'medium' )
+            echo 'http://placehold.it/768x320';
+        elseif ( $size === 'large' ) {
+            echo 'http://placehold.it/960x400';
+        }
+    }
 }
 
 
