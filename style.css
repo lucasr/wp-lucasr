@@ -325,6 +325,11 @@ blockquote p {
 
 .archive .entry-image {
   margin-top: 0.4em;
+  border: 1px solid #dddddd;
+}
+
+.archive .entry-image:hover {
+  border: 1px solid #cccccc;
 }
 
 .archive .entry-summary,

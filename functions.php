@@ -136,11 +136,11 @@ function lucasr_the_post_thumbnail( $size, $placeholder ) {
         echo $images[0];
     } elseif ( $placeholder ) {
         if ( $size === 'small' )
-            echo 'http://placehold.it/480x200';
+            echo get_bloginfo( 'template_directory' ) . '/img/placeholder-480x200.png';
         elseif ( $size === 'medium' )
-            echo 'http://placehold.it/768x320';
+            echo get_bloginfo( 'template_directory' ) . '/img/placeholder-768x320.png';
         elseif ( $size === 'large' ) {
-            echo 'http://placehold.it/960x400';
+            echo get_bloginfo( 'template_directory' ) . '/img/placeholder-960x400.png';
         }
     }
 }
