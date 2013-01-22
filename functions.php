@@ -135,16 +135,6 @@ function lucasr_the_post_thumbnail_large() {
 }
 
 
-function lucasr_header_title() {
-    if ( is_home() || is_front_page() )
-        _e( 'Hi There!', 'lucasr' );
-    elseif ( is_page( 'about' ) )
-        _e( 'About', 'lucasr' );
-    else
-        _e( 'Blog', 'lucasr' );
-}
-
-
 function lucasr_get_recent_posts() {
     $recent_posts = get_transient( 'recent_posts' );
 

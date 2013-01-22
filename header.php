@@ -30,6 +30,5 @@
       <header class="site-header">
         <h1>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-          <?php lucasr_header_title(); ?>
         </h1>
       </header>
