@@ -61,4 +61,12 @@ get_header();?>
 
       </div> <!-- .row-fluid -->
 
+      <div class="row-fluid">
+
+        <div class="home-search span12">
+          <?php get_search_form(); ?>
+        </div> <!-- .span12 -->
+
+      </div> <!-- .row-fluid -->
+
 <?php get_footer(); ?>

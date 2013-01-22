@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   color: #444444;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 
 h1,
@@ -247,6 +248,13 @@ blockquote p {
   text-transform: uppercase;
 }
 
+.home #searchform {
+  padding-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-top: 1px solid #dddddd;
+}
+
 .alignleft {
   float: left;
 }
@@ -382,6 +390,11 @@ blockquote p {
     padding-right: 20px;
   }
 
+  .entry-meta > p {
+    margin-top: 3px;
+  }
+
+  .home #searchform,
   .entry-discuss,
   .entry-meta {
     margin-left: 20px;
@@ -403,6 +416,7 @@ blockquote p {
     padding-right: 0px;
   }
 
+  .home #searchform,
   .entry-discuss,
   .entry-meta {
     margin-left: 0px;
