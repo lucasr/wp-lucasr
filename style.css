@@ -27,7 +27,7 @@ h3 {
 }
 
 h1 {
-  font-size: 2.1em;
+  font-size: 1.8em;
   margin-top: 1em;
   margin-bottom: 0.3em;
 }
@@ -308,7 +308,7 @@ blockquote p {
 }
 
 .archive .entry-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
