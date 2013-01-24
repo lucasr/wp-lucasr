@@ -333,6 +333,7 @@ blockquote p {
 .archive .entry-date {
   font-size: 0.65em;
   line-height: 1.3em;
+  margin-top: 6px;
 }
 
 .archive .entry-image {
