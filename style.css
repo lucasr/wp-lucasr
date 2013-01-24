@@ -275,6 +275,10 @@ blockquote p {
   margin-bottom: 1em;
 }
 
+.caption-text {
+  min-height: 10px;
+}
+
 .entry-image .caption-text,
 .wp-caption .wp-caption-text {
   font-family: "futura-pt",sans-serif;
