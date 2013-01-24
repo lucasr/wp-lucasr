@@ -356,12 +356,6 @@ blockquote p {
 /* Responsive bits */
 
 @media (max-width: 480px) {
-  .entry-title,
-  .archive-title {
-    font-size: 1.6em;
-    line-height: 1em;
-  }
-
   .entry-meta {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -383,6 +377,12 @@ blockquote p {
   body {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .entry-title,
+  .archive-title {
+    font-size: 1.6em;
+    line-height: 1em;
   }
 
   .archive .entry-title {
