@@ -271,6 +271,8 @@ blockquote p {
 
 .wp-caption {
   max-width: 100%;
+  margin-top: 1.6em;
+  margin-bottom: 1em;
 }
 
 .entry-image .caption-text,
@@ -286,16 +288,18 @@ blockquote p {
   margin-right: 4px;
 }
 
+.entry-content img {
+  border: 1px solid #dddddd;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+
 .wp-caption img {
   border: 1px solid #dddddd;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 0px;
-}
-
-.entry-content img {
-  margin-bottom: 1.6em;
 }
 
 /* archives */
@@ -367,6 +371,11 @@ blockquote p {
     float: none;
     margin: 0px auto;
     margin-bottom: 16px;
+  }
+
+  .entry-image .caption-text,
+  .wp-caption .wp-caption-text {
+    text-align: center;
   }
 }
 
