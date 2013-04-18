@@ -17,6 +17,8 @@ function lucasr_setup() {
     set_post_thumbnail_size( 480, 200 );
 
     add_post_type_support( 'page', 'excerpt' );
+
+    add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'lucasr_setup' );
 
