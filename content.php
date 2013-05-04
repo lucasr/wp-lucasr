@@ -60,11 +60,11 @@
             </div> <!-- .entry-discuss -->
 
             <div class="entry-meta">
-              <?php echo get_avatar( get_the_author_meta('ID'), 100 ); ?>
+              <?php echo get_avatar( get_the_author_meta( 'ID' ), 100 ); ?>
               <p>
                 <span class="entry-author"><?php the_author_meta( 'display_name' ); ?></span>
                 <?php the_author_meta( 'description' ); ?>
-                <a href="about"><?php _e( 'More about me', "lucasr" ); ?>&rarr;</a>
+                <a href="<?php lucasr_the_author_page( get_the_author_meta( 'user_login' ) ) ?>"><?php _e( 'More about me', "lucasr" ); ?>&rarr;</a>
               </p>
             </div> <!-- .entry-meta -->
 
