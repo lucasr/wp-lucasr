@@ -14,7 +14,7 @@ License URI: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 body {
   font-family: "ff-tisa-web-pro",serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #444444;
   font-weight: 400;
   margin-bottom: 30px;
@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-  line-height: 1.6em;
+  line-height: 1.55em;
   margin-bottom: 0.8em;
   text-align: justify;
   -webkit-hyphens: auto;
@@ -106,6 +106,7 @@ blockquote p {
 .site-header {
   display: block;
   border-bottom: 1px solid #dddddd;
+  margin-bottom: 0px;
 }
 
 .site-header > h1 {
@@ -196,7 +197,7 @@ blockquote p {
 }
 
 .entry-meta {
-  font-size: 0.90em;
+  font-size: 0.85em;
   display: block;
   font-style: italic;
   margin-top: 10px;
