@@ -54,10 +54,27 @@
               <?php the_content(); ?>
             </div> <!-- .entry-content -->
 
+            <?php if ( get_the_author_meta( 'twitter' ) || get_the_author_meta( 'googleplus' ) ) : ?>
+
             <div class="entry-discuss">
-              <p><?php _e(' Got something to add? Find me on <a href="http://twitter.com/lucasratmundo" title="Tweet to @lucasratmundo">Twitter</a>
-              and <a href="http://gplus.to/lucasr" title="Find me on Google+">Google+</a>' ); ?></p>
+              <p>
+                <?php _e( 'Got something to add? Find me on '); ?>
+
+                <?php if ( get_the_author_meta( 'twitter' ) ) : ?>
+                  <a href="<?php the_author_meta( 'twitter' ); ?>">Twitter</a>
+                <?php endif; ?>
+
+                <?php if ( get_the_author_meta( 'twitter' ) && get_the_author_meta( 'googleplus' ) ) : ?>
+                  <?php _e( 'and', 'lucasr' ); ?>
+                <?php endif; ?>
+
+                <?php if ( get_the_author_meta( 'googleplus' ) ) : ?>
+                  <a href="<?php the_author_meta( 'googleplus' ); ?>">Google+</a>
+                <?php endif; ?>
+              </p>
             </div> <!-- .entry-discuss -->
+
+            <?php endif; ?>
 
             <div class="entry-meta">
               <?php echo get_avatar( get_the_author_meta( 'ID' ), 100 ); ?>
