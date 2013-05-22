@@ -113,6 +113,40 @@ function lucasr_change_search_size( $query ) {
 add_filter( 'pre_get_posts', 'lucasr_change_search_size' );
 
 
+function lucasr_show_extra_profile_fields( $user ) { ?>
+    <h3><?php _e( 'Extra profile information', 'lucasr' ); ?></h3>
+    <table class="form-table">
+      <tr>
+        <th><label for="twitter">Twitter</label></th>
+        <td>
+          <input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text"/><br/>
+          <span class="description"><?php _e( 'Enter the URL of your Twitter profile.', 'lucasr' ); ?></span>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="googleplus">Google+</label></th>
+        <td>
+          <input type="text" name="googleplus" id="googleplus" value="<?php echo esc_attr( get_the_author_meta( 'googleplus', $user->ID ) ); ?>" class="regular-text" /><br />
+          <span class="description"><?php _e( 'Enter the URL of your Google+ profile.', 'lucasr' ); ?></span>
+        </td>
+      </tr>
+    </table>
+<?php }
+add_action( 'show_user_profile', 'lucasr_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'lucasr_show_extra_profile_fields' );
+
+
+function lucasr_save_extra_profile_fields( $user_id ) {
+    if ( !current_user_can( 'edit_user', $user_id ) )
+        return;
+
+    update_usermeta( $user_id, 'twitter', $_POST['twitter'] );
+    update_usermeta( $user_id, 'googleplus', $_POST['googleplus'] );
+}
+add_action( 'personal_options_update', 'lucasr_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'lucasr_save_extra_profile_fields' );
+
+
 function lucasr_the_post_thumbnail_caption() {
     $thumbnail_id = get_post_thumbnail_id();
     if ( $thumbnail_id !== null )
