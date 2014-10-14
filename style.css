@@ -383,6 +383,7 @@ blockquote p {
 
 @media (max-width: 767px) {
   body {
+    font-size: 20px;
     padding-left: 0px;
     padding-right: 0px;
   }
