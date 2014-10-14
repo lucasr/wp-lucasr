@@ -14,7 +14,7 @@ License URI: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 body {
   font-family: "ff-tisa-web-pro",serif;
-  font-size: 22px;
+  font-size: 18px;
   color: #444444;
   font-weight: 400;
   margin-bottom: 30px;
@@ -421,6 +421,7 @@ blockquote p {
 
 @media (min-width: 768px) and (max-width: 979px) {
   body {
+    font-size: 22px;
     padding-left: 0px;
     padding-right: 0px;
   }
