@@ -56,12 +56,6 @@ h3 {
 p {
   line-height: 1.55em;
   margin-bottom: 0.8em;
-  text-align: justify;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 
 ul,
