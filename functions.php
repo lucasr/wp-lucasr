@@ -226,7 +226,7 @@ function lucasr_the_pagination_links() {
 
 if ( ! function_exists( 'lucasr_the_author_page' ) ) {
     function lucasr_the_author_page( $user_login ) {
-        echo 'about';
+        echo '/about';
     }
 }
 ?>
